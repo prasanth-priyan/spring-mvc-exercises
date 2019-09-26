@@ -1,24 +1,23 @@
 package com.stackroute;
 
 public class User {
-    private int id;
-    private String name;
+    private String userName;
+    private String userPassword;
 
-    public User(int id, String name) {
-        this.id = id;
-        this.name = name;
+    public User(String userName, String userPassword) {
+        this.userName = userName;
+        this.userPassword = userPassword;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    @Override
-    public String toString() {
-        return this.id + " - " + this.name;
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
 }
